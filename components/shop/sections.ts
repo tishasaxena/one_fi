@@ -1,8 +1,12 @@
-/** The three Shop options from the brief, in the order they appear. */
+/**
+ * The three Shop options from the brief, in the order they appear. The third is
+ * labelled just "Marketplace" in the control (it's already inside the 1Fi app);
+ * the full "1Fi Marketplace" name is used in headings and cards.
+ */
 export const SHOP_SECTIONS = [
   { value: "top-brands", label: "Top Brands" },
   { value: "nearby-stores", label: "Nearby Stores" },
-  { value: "marketplace", label: "1Fi Marketplace" },
+  { value: "marketplace", label: "Marketplace" },
 ] as const;
 
 export type ShopSectionValue = (typeof SHOP_SECTIONS)[number]["value"];

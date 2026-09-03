@@ -61,11 +61,12 @@ export function Segmented({
             type="button"
             onClick={() => onValueChange(option.value)}
             className={cn(
-              "flex items-center justify-center gap-1.5 rounded-full text-[13px] font-semibold transition-colors",
-              fill ? "flex-1" : "shrink-0",
+              "flex items-center justify-center gap-1 rounded-full font-semibold transition-colors",
+              fill ? "min-w-0 flex-1 text-xs" : "shrink-0 text-[13px]",
               chips
                 ? [
-                    "border px-3.5 py-2",
+                    "border py-2",
+                    fill ? "px-2" : "px-3.5",
                     active
                       ? "border-ink bg-ink text-ink-foreground"
                       : "border-border bg-card text-muted-foreground hover:text-foreground",

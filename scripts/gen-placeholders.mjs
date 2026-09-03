@@ -80,16 +80,20 @@ function svg(name, category, frame) {
     </linearGradient>
   </defs>
   <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="${140 + shift}" cy="${170 - shift}" r="260" fill="${c.accent}" opacity="0.06"/>
-  <rect x="188" y="150" width="424" height="424" rx="52" fill="url(#pill)"/>
-  <g transform="translate(220 182) scale(3.0)" fill="none" stroke="${c.accent}"
-     stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="${140 + shift}" cy="${170 - shift}" r="280" fill="${c.accent}" opacity="0.06"/>
+  <circle cx="${640 - shift}" cy="${660 + shift}" r="150" fill="${c.accent}" opacity="0.05"/>
+  <rect x="200" y="200" width="400" height="400" rx="56" fill="url(#pill)"/>
+  <g transform="translate(230 240) scale(2.83)" fill="none" stroke="${c.accent}"
+     stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
     ${c.icon}
   </g>
-  <text x="400" y="648" text-anchor="middle" font-family="Geist, Segoe UI, system-ui, sans-serif"
-        font-size="40" font-weight="700" fill="#0a0a0a">${escapeXml(name)}</text>
-  <text x="400" y="690" text-anchor="middle" font-family="Geist, Segoe UI, system-ui, sans-serif"
-        font-size="22" font-weight="600" letter-spacing="3" fill="${PURPLE}">1Fi MARKETPLACE</text>
+  <g transform="translate(348 690)" aria-label="${escapeXml(name)}">
+    <rect x="-4" y="-24" width="34" height="34" rx="9" fill="${PURPLE}"/>
+    <text x="13" y="-1" text-anchor="middle" font-family="Geist, Segoe UI, system-ui, sans-serif"
+          font-size="15" font-weight="700" fill="#ffffff">1Fi</text>
+    <text x="44" y="0" font-family="Geist, Segoe UI, system-ui, sans-serif"
+          font-size="17" font-weight="600" letter-spacing="2" fill="#8a8a8a">MARKETPLACE</text>
+  </g>
 </svg>
 `;
 }
