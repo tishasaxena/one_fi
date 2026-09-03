@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/*
+  1Fi design tokens.
+
+  Values are lifted from the live 1Fi app (app.1fi.in — the Next.js PWA that the
+  Android app wraps as a TWA): Tailwind v4 + shadcn/ui token names, Geist font,
+  brand purple #712CDC with a #ede8ff tint and #5c22a5 shade, a #f6f6f6 canvas
+  and 10px base radius. Keeping the same names/values means components read the
+  way the real app's components do.
+*/
+@theme {
+  --font-sans:
+    var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-background: #f6f6f6;
+  --color-foreground: #0a0a0a;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+
+  /* Brand */
+  --color-primary: #712cdc;
+  --color-primary-foreground: #ffffff;
+  --color-primary-dark: #5c22a5;
+  --color-primary-light: #ede8ff;
+
+  /* Near-black — the app uses this for selected chips and secondary buttons */
+  --color-ink: #171717;
+  --color-ink-foreground: #fafafa;
+
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+
+  --color-border: #e5e5e5;
+  --color-input: #e5e5e5;
+  --color-ring: #712cdc;
+
+  --color-success: #00a544;
+  --color-success-light: #e7f8ee;
+  --color-destructive: #e40014;
+  --color-destructive-light: #fdecec;
+
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.875rem;
+  --radius-2xl: 1.125rem;
+
+  --shadow-card: 0 1px 2px 0 rgb(16 24 40 / 0.04), 0 1px 3px 0 rgb(16 24 40 / 0.06);
+  --shadow-pop: 0 8px 24px -6px rgb(16 24 40 / 0.12), 0 2px 8px -2px rgb(16 24 40 / 0.08);
+
+  --brand-gradient: linear-gradient(135deg, #712cdc 0%, #8c27fc 52%, #5c22a5 100%);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Consistent, on-brand focus treatment across every interactive element. */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Numbers read better with tabular figures in a fintech context. */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* The purple gradient card used at the top of Home / EMI Dues / Limit / Shop. */
+  .brand-gradient {
+    background-image: var(--brand-gradient);
+  }
+
+  /* Uppercase micro-label ("SELECT YOUR VARIANT", "REMAINING LIMIT", ...) */
+  .section-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-muted-foreground);
+  }
+
+  /* Hide scrollbars on the horizontal chip/browse rails while keeping them scrollable. */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes sheet-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
