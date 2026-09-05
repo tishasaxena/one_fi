@@ -5,17 +5,19 @@
       <stop offset="1" stop-color="#E9F6FF"/>
     </linearGradient>
     <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1E9DE3" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#1E9DE3" stop-opacity="0.05"/>
+      <stop offset="0" stop-color="#1e8de3" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#1e8de3" stop-opacity="0.05"/>
     </linearGradient>
   </defs>
   <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="140" cy="170" r="280" fill="#1E9DE3" opacity="0.06"/>
-  <circle cx="640" cy="660" r="150" fill="#1E9DE3" opacity="0.05"/>
+  <circle cx="146" cy="164" r="280" fill="#1e8de3" opacity="0.06"/>
+  <circle cx="634" cy="666" r="150" fill="#1e8de3" opacity="0.05"/>
   <rect x="200" y="200" width="400" height="400" rx="56" fill="url(#pill)"/>
-  <g transform="translate(230 240) scale(2.83)" fill="none" stroke="#1E9DE3"
-     stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="26" y="30" width="68" height="44" rx="5"/><path d="M18 84 h84 l-6 8 h-72 z"/>
+  <g transform="translate(400 400) rotate(-7.2) scale(1 1) translate(-400 -400)">
+    <g transform="translate(230 240) scale(2.83)" fill="none" stroke="#1e8de3"
+       stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="27" y="28" width="66" height="43" rx="4"/><circle cx="60" cy="46" r="1.6" fill="currentColor" stroke="none"/><path d="M17 83 h86 l-7 8 h-72 z"/>
+    </g>
   </g>
   <g transform="translate(348 690)" aria-label="MacBook Pro 14&quot;">
     <rect x="-4" y="-24" width="34" height="34" rx="9" fill="#712CDC"/>

@@ -5,17 +5,19 @@
       <stop offset="1" stop-color="#FDEEF6"/>
     </linearGradient>
     <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#D6459A" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#D6459A" stop-opacity="0.05"/>
+      <stop offset="0" stop-color="#d645b0" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#d645b0" stop-opacity="0.05"/>
     </linearGradient>
   </defs>
   <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="147" cy="163" r="280" fill="#D6459A" opacity="0.06"/>
-  <circle cx="633" cy="667" r="150" fill="#D6459A" opacity="0.05"/>
+  <circle cx="156" cy="154" r="280" fill="#d645b0" opacity="0.06"/>
+  <circle cx="624" cy="676" r="150" fill="#d645b0" opacity="0.05"/>
   <rect x="200" y="200" width="400" height="400" rx="56" fill="url(#pill)"/>
-  <g transform="translate(230 240) scale(2.83)" fill="none" stroke="#D6459A"
-     stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M30 66 v-6 a30 30 0 0 1 60 0 v6"/><rect x="24" y="64" width="14" height="26" rx="6"/><rect x="82" y="64" width="14" height="26" rx="6"/>
+  <g transform="translate(400 400) rotate(7.2) scale(1 1) translate(-400 -400)">
+    <g transform="translate(230 240) scale(2.83)" fill="none" stroke="#d645b0"
+       stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M30 66 v-6 a30 30 0 0 1 60 0 v6"/><rect x="24" y="64" width="14" height="26" rx="6"/><rect x="82" y="64" width="14" height="26" rx="6"/>
+    </g>
   </g>
   <g transform="translate(348 690)" aria-label="Sony WH-1000XM6">
     <rect x="-4" y="-24" width="34" height="34" rx="9" fill="#712CDC"/>

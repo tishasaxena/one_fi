@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BadgeIndianRupee, ShieldCheck, Sparkles, TrendingUp } from "lucide-react";
+import { ArrowRight, BadgeIndianRupee, Check, ShieldCheck, Sparkles, TrendingUp } from "lucide-react";
 import { GradientHeader } from "@/components/app-shell/GradientHeader";
 import { OneFiWordmark } from "@/components/app-shell/OneFiWordmark";
 import { Button } from "@/components/ui/button";
+import { NewBadge } from "@/components/ui/new-badge";
 import { formatINR } from "@/lib/format";
 
 export const metadata: Metadata = { title: "Home · 1Fi" };
@@ -60,18 +62,27 @@ export default function DashboardPage() {
           </div>
           <Link
             href="/shop?section=marketplace"
-            className="brand-gradient flex items-center justify-between gap-3 rounded-2xl p-4 text-white"
+            className="relative flex items-center justify-between overflow-hidden rounded-2xl bg-ink p-4 text-white"
           >
-            <div>
-              <p className="text-[11px] font-semibold uppercase tracking-wider text-white/70">
-                New
+            <div className="relative z-10 max-w-[60%]">
+              <NewBadge light />
+              <p className="mt-2 text-sm font-semibold leading-snug">
+                Phones, laptops &amp; more on no-cost EMI
               </p>
-              <p className="mt-1 text-sm font-semibold">
-                Phones, laptops & more on no-cost EMI
+              <p className="mt-2 flex items-center gap-1 text-xs text-white/70">
+                <Check className="size-3.5 text-success" /> Starts at ₹2,000/mo
               </p>
-              <p className="mt-1 text-xs text-white/80">Starts at ₹2,000/mo</p>
             </div>
-            <ArrowRight className="size-5 shrink-0" />
+            <div className="absolute -right-4 top-1/2 size-28 -translate-y-1/2 opacity-90">
+              <Image
+                src="/products/macbook-pro-14-m5-1.svg"
+                alt=""
+                fill
+                sizes="112px"
+                className="object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
+              />
+            </div>
+            <ArrowRight className="relative z-10 size-5 shrink-0 self-end" />
           </Link>
         </section>
 

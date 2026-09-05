@@ -5,17 +5,19 @@
       <stop offset="1" stop-color="#FFF1E6"/>
     </linearGradient>
     <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E5761F" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#E5761F" stop-opacity="0.05"/>
+      <stop offset="0" stop-color="#e5831f" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#e5831f" stop-opacity="0.05"/>
     </linearGradient>
   </defs>
   <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="140" cy="170" r="280" fill="#E5761F" opacity="0.06"/>
-  <circle cx="640" cy="660" r="150" fill="#E5761F" opacity="0.05"/>
+  <circle cx="142" cy="168" r="280" fill="#e5831f" opacity="0.06"/>
+  <circle cx="638" cy="662" r="150" fill="#e5831f" opacity="0.05"/>
   <rect x="200" y="200" width="400" height="400" rx="56" fill="url(#pill)"/>
-  <g transform="translate(230 240) scale(2.83)" fill="none" stroke="#E5761F"
-     stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="34" cy="78" r="16"/><circle cx="88" cy="78" r="16"/><path d="M34 78 l20 -28 h24 l10 28 M44 50 h26"/>
+  <g transform="translate(400 400) rotate(0.0) scale(1 1) translate(-400 -400)">
+    <g transform="translate(230 240) scale(2.83)" fill="none" stroke="#e5831f"
+       stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="30" cy="82" r="14"/><circle cx="90" cy="82" r="14"/><path d="M30 82 h14 l10 -20 h20 v-10 h14"/><path d="M54 62 h22 l8 20"/><path d="M74 42 h12"/>
+    </g>
   </g>
   <g transform="translate(348 690)" aria-label="Hunter 350">
     <rect x="-4" y="-24" width="34" height="34" rx="9" fill="#712CDC"/>

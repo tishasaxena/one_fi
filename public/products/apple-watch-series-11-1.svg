@@ -5,17 +5,19 @@
       <stop offset="1" stop-color="#EAF7EF"/>
     </linearGradient>
     <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1FA463" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#1FA463" stop-opacity="0.05"/>
+      <stop offset="0" stop-color="#1fa461" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#1fa461" stop-opacity="0.05"/>
     </linearGradient>
   </defs>
   <rect width="800" height="800" fill="url(#bg)"/>
-  <circle cx="140" cy="170" r="280" fill="#1FA463" opacity="0.06"/>
-  <circle cx="640" cy="660" r="150" fill="#1FA463" opacity="0.05"/>
+  <circle cx="148" cy="162" r="280" fill="#1fa461" opacity="0.06"/>
+  <circle cx="632" cy="668" r="150" fill="#1fa461" opacity="0.05"/>
   <rect x="200" y="200" width="400" height="400" rx="56" fill="url(#pill)"/>
-  <g transform="translate(230 240) scale(2.83)" fill="none" stroke="#1FA463"
-     stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="40" y="40" width="40" height="40" rx="12"/><path d="M50 40 l3 -14 h14 l3 14"/><path d="M50 80 l3 14 h14 l3 -14"/>
+  <g transform="translate(400 400) rotate(-4.8) scale(1 1) translate(-400 -400)">
+    <g transform="translate(230 240) scale(2.83)" fill="none" stroke="#1fa461"
+       stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="40" y="40" width="40" height="40" rx="12"/><path d="M50 40 l3 -14 h14 l3 14"/><path d="M50 80 l3 14 h14 l3 -14"/>
+    </g>
   </g>
   <g transform="translate(348 690)" aria-label="Apple Watch S11">
     <rect x="-4" y="-24" width="34" height="34" rx="9" fill="#712CDC"/>

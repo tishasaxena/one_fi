@@ -5,9 +5,9 @@ import type { ProductSummary } from "@/lib/types";
 export function ProductGrid({ products }: { products: ProductSummary[] }) {
   return (
     <ul className="grid grid-cols-2 gap-3">
-      {products.map((product) => (
+      {products.map((product, index) => (
         <li key={product.id} className="contents">
-          <ProductCard product={product} />
+          <ProductCard product={product} index={index} />
         </li>
       ))}
     </ul>
